@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sp">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,38 +9,78 @@
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
 </head>
-<body>
-    <h3>1.El programa muestra primero una tabla de notas con sus equivalentes en el Standard Grading System o el sistema utilizado en los Estados Unidos que va desde la A hasta la F. El programa preguntará al usuario su nota y transformará ese resultado al equivalente en el Standard Grading System. También el programa dará una pequeña pero valiosa recomendación al usuario respecto a su nivel de estudio y calidad como estudiante.</h3>
-    <img class="img" src="img/tabla.png">
 
+<body>
+    <h2>2."Desarrolle un algoritmo para la empresa Constructora Tecnovivir Casas C.A., que le permita calcular e"
+        imprimir la nómina para su cancelación a un total de 50 obreros calificados a quienes debe cancelar por horas
+        trabajadas. La hora trabajada se pautó en 5,208.33 Pesos.</h2>
+
+
+    <table id="customers">
+        <tr>
+            <th>Tiempos</th>
+            <th>Pago</th>
+        </tr>
+        <tr>
+            <td>1 Hora</td>
+            <td>5,208.33</td>
+        </tr>
+        <tr>
+            <td>2 Horas</td>
+            <td>10,416.66</td>
+        </tr>
+        <tr>
+            <td>3 Horas</td>
+            <td>15,624.99</td>
+        </tr>
+        <tr>
+            <td>4 Horas</td>
+            <td>20,833.32</td>
+        </tr>
+        <tr>
+            <td>5 Horas</td>
+            <td>26,041.65</td>
+        </tr>
+        <tr>
+            <td>6 Horas</td>
+            <td>31,249.98</td>
+        </tr>
+        <tr>
+            <td>7 Horas</td>
+            <td>36,458.31</td>
+        </tr>
+        <tr>
+            <td>8 Horas</td>
+            <td>41,666.64</td>
+        </tr>
+        <tr>
+            <td>9 Horas</td>
+            <td>46,874.97</td>
+        </tr>
+        <tr>
+            <td>10 Horas</td>
+            <td>52,083.03</td>
+        </tr>
+    </table>
+    <br>
 
     <form id="myForm" method="get">
-        <div id="selecion">
-            <label>Traditional</label>
-            <input type="radio" name="scale" value="Traditional">
-            <label>Point Range</label>
-            <input type="radio" name="scale" value="Point_Range">
-        </div>
-        <input type="text" name="nota" placeholder="" required>
+        <label>Horas trabajadas</label>
+        <input type="text" name="horas" placeholder="Horas trabajadas diarias" required>
         <input type="submit" value="Enviar">
     </form>
+    <table id="customers">
+        <thead>
+            <tr>
+                <th>Horas trabajadas</th>
+                <th>Total A Pagar</th>
+            </tr>
+        </thead>
+        <tbody id="tablaResul"></tbody>
+    </table>
 
-    <dialog>
-        <button id="close">X</button>
-        <table>
-            <thead>
-                <tr>
-                    <th>Traditional (%)</th>
-                    <th>14-Point Range</th>
-                    <th>Letter</th>
-                    <th>SBG Rating</th>
-                    <th>Proficiency Level Witch Standard</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
 
-    </dialog>
 
 </body>
+
 </html>
