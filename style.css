@@ -1,9 +1,14 @@
 body{
-    background-color: rgb(154, 128, 202);
+    background-color: rgb(128, 199, 202);
 }
 
 h2{
     text-align: center;
+}
+
+p{
+    text-align: center;
+    font-size: 45px ;
 }
 
 input[type="text"]{
@@ -37,6 +42,6 @@ input[type="submit"]{
 
 .total{
     text-align: center;
-    font-size: 15px;
+    font-size: 35px;
     font-weight: bold;
 }
